@@ -1,0 +1,112 @@
+* {
+    /* background-color: aqua; */
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* thiết lập khung của máy tính cầm tay */
+
+
+/* chưa tìm được kí tự hai dấu + và - */
+
+
+/* code còn rườm rà chưa được tối ưu cần sửa lại nhiều */
+
+.cal {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.container {
+    background-color: #565656;
+    color: #fff;
+    width: 400px;
+    height: 440px;
+    margin: 0px auto;
+    padding: 10px 30px 15px 35px;
+    /* margin-top: 50px; */
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 65px 65px 65px 65px 65px 65px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
+.num1 {
+    grid-column: 1/5;
+    background-color: #565656;
+    border: solid 1px;
+    text-align: center;
+    /* height: 150%; */
+}
+
+.row1 {
+    text-align: center;
+    background-color: black;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    padding: auto 0px;
+    border: #1b1b1a solid 1px;
+    /* height: 80%; */
+}
+
+.icon {
+    margin: 23px auto;
+}
+
+.num9 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row: 3 / 7;
+    /* text-align: center; */
+    border: #1b1b1a solid 1px;
+    background-color: #4c4b4a;
+    /* height: 95%; */
+}
+
+.bang {
+    margin-top: 135px;
+    text-align: center;
+}
+
+.num {
+    text-align: center;
+    background-color: black;
+    /* height: 80%; */
+    justify-content: center;
+    text-align: center;
+    border: #1b1b1a solid 1px;
+}
+
+
+/* thiết lập phần hiển thị ra màn hình kết quả phép tính */
+
+.screen {
+    text-align: right;
+    /* text-align-last: right; */
+    margin: 5px;
+    margin-top: 35px;
+}
+
+
+/* Tạo hiệu ứng khi đưa chuột vào môi nút 
+    Ôn tập hover before và after  */
+
+.num:hover {
+    background-color: #565656;
+    transition: 0.2s;
+}
+
+.row1:hover {
+    background-color: #565656;
+    transition: 0.2s;
+}
+
+.num9:hover {
+    background-color: #1b1b1a;
+    transition: 0.2s;
+}
